@@ -1,11 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#12345a">
   <title>ABI HORIZON - Lift AMC</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -14,20 +21,24 @@
       overflow: hidden;
       background: #f1f4f9;
     }
+
     iframe {
       position: fixed;
-      top: -46px; /* Pushes the Google warning banner off the top */
-      left: 0;
+      inset: 0;
       width: 100%;
-      height: calc(100% + 46px);
+      height: 100vh;
+      height: 100dvh;
       border: none;
+      display: block;
+      background: #ffffff;
     }
   </style>
 </head>
+
 <body>
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbzgn_NUwiWTIcC1A_3IX6RK6wlSWEW48wrtzpMdCjQdFSbhrzkPX8PCBcv_wNdo6HF4/exec" 
-    allow="camera *; microphone *; geolocation *">
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbx-hqo-Pg7eK4zppquFeZwrx3NienW3_hr26kdY20GuPTYS0WcJ0Sn0GxK945N1knWj/exec"
+    allow="camera *; geolocation *">
   </iframe>
 </body>
 </html>
