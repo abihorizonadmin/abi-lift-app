@@ -6,6 +6,9 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#12345a">
+  <meta name="description"
+        content="ABI HORIZON Lift AMC Service Monitoring">
+
   <title>ABI HORIZON - Lift AMC</title>
 
   <style>
@@ -13,32 +16,46 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
+    html,
+    body {
       width: 100%;
       height: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
       overflow: hidden;
       background: #f1f4f9;
     }
 
-    iframe {
+    body {
       position: fixed;
       inset: 0;
+    }
+
+    #liftAmcFrame {
+      position: fixed;
+      inset: 0;
+      display: block;
       width: 100%;
       height: 100vh;
       height: 100dvh;
-      border: none;
-      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
       background: #ffffff;
     }
   </style>
 </head>
 
 <body>
+
   <iframe
-    src="https://script.google.com/macros/s/AKfycbx-hqo-Pg7eK4zppquFeZwrx3NienW3_hr26kdY20GuPTYS0WcJ0Sn0GxK945N1knWj/exec"
-    allow="camera *; geolocation *">
+    id="liftAmcFrame"
+    title="ABI HORIZON Lift AMC Service Monitoring"
+    src="https://script.google.com/macros/s/AKfycby-b_R7Ir8hpO4HxlEb1eMHfLm8AhdiIS1ZsnYQyzRBsw0KhvTzwANQKXb79hbvAZuF/exec"
+    allow="camera *; microphone *; geolocation *"
+    allowfullscreen>
   </iframe>
+
 </body>
 </html>
